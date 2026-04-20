@@ -1,5 +1,18 @@
 import './style.css';
 
+// Hero background images – imported so Vite rewrites paths with the correct base
+import hero1 from '../public/hero1.jpg';
+import hero2 from '../public/hero2.jpg';
+import hero3 from '../public/hero3.jpg';
+
+// Apply backgrounds immediately (before DOMContentLoaded delay is fine here)
+const bg1 = document.getElementById('slideBg1');
+const bg2 = document.getElementById('slideBg2');
+const bg3 = document.getElementById('slideBg3');
+if (bg1) bg1.style.backgroundImage = `url('${hero1}')`;
+if (bg2) bg2.style.backgroundImage = `url('${hero2}')`;
+if (bg3) bg3.style.backgroundImage = `url('${hero3}')`;
+
 /* ============================================================
    SURYA DENTAL – MAIN JS
    ============================================================ */

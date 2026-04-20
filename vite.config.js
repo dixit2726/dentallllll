@@ -3,12 +3,12 @@ import { defineConfig } from 'vite';
 // ──────────────────────────────────────────────────────────────
 // Vite Config – Surya Dental
 // Configured for GitHub Pages deployment under:
-//   https://<username>.github.io/surya-dental/
+//   https://dixit2726.github.io/suryaaadental/
 // ──────────────────────────────────────────────────────────────
 
 export default defineConfig({
-  // ▶ Change '/surya-dental/' to match your GitHub repo name exactly
-  base: '/surya-dental/',
+  // ▶ Matches the actual GitHub repo name exactly
+  base: '/suryaaadental/',
 
   build: {
     outDir: 'dist',
