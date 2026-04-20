@@ -8,13 +8,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "vite": "^6.3.2"
-  },
-  "dependencies": {
+    "vite": "^6.3.2",
     "gh-pages": "^6.3.0"
   },
-  "homepage": "https://dixit2726.github.io/suryaaadental/"
+  "homepage": "https://dixit2726.github.io/dentallllll/"
 }

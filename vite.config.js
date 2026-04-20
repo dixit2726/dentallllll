@@ -8,7 +8,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   // ▶ Matches the actual GitHub repo name exactly
-  base: '/suryaaadental/',
+  base: '/dentallllll/',
 
   build: {
     outDir: 'dist',
