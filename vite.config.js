@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite';
 
 // ──────────────────────────────────────────────────────────────
-// Vite Config – Surya Dental
+// Vite Config – Vijaya Dental
 // Configured for GitHub Pages deployment under:
-//   https://dixit2726.github.io/suryaaadental/
+//   https://dixit2726.github.io/vijayadental/
 // ──────────────────────────────────────────────────────────────
 
 export default defineConfig({
@@ -22,6 +22,25 @@ export default defineConfig({
     sourcemap: false,
 
     rollupOptions: {
+      input: {
+        main: 'index.html',
+        about: 'about.html',
+        treatments: 'treatments.html',
+        reviews: 'reviews.html',
+        gallery: 'gallery.html',
+        location: 'location.html',
+        appointment: 'appointment.html',
+        invisalign: 'invisalign.html',
+        braces: 'braces.html',
+        smile_designing: 'smile-designing.html',
+        dental_implants: 'dental-implants.html',
+        root_canal: 'root-canal.html',
+        crowns_bridges: 'crowns-bridges.html',
+        flap_surgery: 'flap-surgery.html',
+        teeth_whitening: 'teeth-whitening.html',
+        impacted_teeth: 'impacted-teeth.html',
+        full_mouth_rehabilitation: 'full-mouth-rehabilitation.html',
+      },
       output: {
         // Clean chunk naming
         chunkFileNames: 'assets/js/[name]-[hash].js',

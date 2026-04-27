@@ -6,20 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Primary SEO Meta Tags -->
-  <title>Surya Dental & Medical Clinic | Best Dentist in Sanath Nagar, Hyderabad</title>
-  <meta name="description" content="Surya Dental & Medical Clinic – 5.0⭐ rated dental clinic in Sanath Nagar, Hyderabad. Painless root canal, wisdom tooth removal, dental implants, zirconia crowns & smile correction. Affordable pricing. Call 072077 26666." />
-  <meta name="keywords" content="best dental clinic in Sanath Nagar, painless root canal Hyderabad, affordable dentist near me, wisdom tooth removal Hyderabad, dental implants Hyderabad, zirconia crowns, smile correction Hyderabad, Dr Venkatesh dentist" />
-  <meta name="author" content="Surya Dental & Medical Clinic" />
+  <title>Vijaya Dental & Implant Center | Best Dentist in Dammaiguda, Hyderabad</title>
+  <meta name="description" content="Vijaya Dental & Implant Center – 5.0⭐ rated dental Center in Dammaiguda, Hyderabad. Painless root canal, wisdom tooth removal, dental implants, zirconia crowns & smile correction. Affordable pricing. Call 072077 26666." />
+  <meta name="keywords" content="best dental Center in Dammaiguda, painless root canal Hyderabad, affordable dentist near me, wisdom tooth removal Hyderabad, dental implants Hyderabad, zirconia crowns, smile correction Hyderabad, Dr Praveen R dentist" />
+  <meta name="author" content="Vijaya Dental & Implant Center" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Surya Dental & Medical Clinic | 5.0⭐ Rated Dentist in Hyderabad" />
+  <meta property="og:title" content="Vijaya Dental & Implant Center | 5.0⭐ Rated Dentist in Hyderabad" />
   <meta property="og:description" content="Painless dental treatments, affordable pricing, 130+ happy patients. Book your appointment today!" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_IN" />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://dixit2726.github.io/dentallllll/" />
+
+  <!-- CSS Styles (Relative path for Live Server & Vite) -->
+  <link rel="stylesheet" href="src/style.css?v=1.0.3" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,18 +37,23 @@
   {
     "@context": "https://schema.org",
     "@type": "Dentist",
-    "name": "Surya Dental & Medical Clinic",
-    "image": "",
-    "description": "Painless dental treatments, affordable pricing, 5.0 star rated dental clinic in Hyderabad.",
+    "name": "Vijaya Dental & Implant Center",
+    "image": "https://dixit2726.github.io/dentallllll/hero1.jpg",
+    "description": "Vijaya Dental & Implant Center – 5.0⭐ rated dental Center in Dammaiguda, Hyderabad. Painless root canal, dental implants, and smile correction.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Opp. Renova Neelima Hospital, Shivaji Nagar, Sanath Nagar",
-      "addressLocality": "Hyderabad",
+      "streetAddress": "Beside RR hospital, P S Rao Nagar, Dammaiguda",
+      "addressLocality": "Secunderabad, Hyderabad",
       "addressRegion": "Telangana",
-      "postalCode": "500018",
+      "postalCode": "500083",
       "addressCountry": "IN"
     },
-    "telephone": "+917207726666",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "17.5001875",
+      "longitude": "78.5921875"
+    },
+    "telephone": "+919177617437",
     "openingHours": "Mo-Su 10:00-20:00",
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -57,30 +65,42 @@
   }
   </script>
 
-
+  <noscript><style>body { opacity: 1 !important; }</style></noscript>
+  <script>
+    // Visibility Timeout: Ensure site shows up even if JS fails
+    setTimeout(() => { 
+      document.body.style.opacity = '1'; 
+      // Force reveal all elements if they haven't been revealed yet
+      document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right').forEach(el => {
+        el.classList.add('visible');
+      });
+    }, 2500);
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
+<body style="opacity: 0; transition: opacity 0.6s ease;">
 
   <!-- ==============================
        NAVIGATION
   ============================== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#home" class="nav-logo">
-        <span class="logo-icon">🦷</span>
+      <a href="index.html" class="nav-logo">
+        <img src="vijayalogog (1).jpg" alt="Vijaya Dental & Implant Center Logo" class="logo-img" />
         <div class="logo-text">
-          <span class="logo-main">Surya Dental</span>
-          <span class="logo-sub">& Medical Clinic</span>
+          <span class="logo-main">Vijaya Dental</span>
+          <span class="logo-sub">& Implant Center</span>
         </div>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#reviews" class="nav-link">Reviews</a></li>
-        <li><a href="#gallery" class="nav-link">Gallery</a></li>
-        <li><a href="#location" class="nav-link">Location</a></li>
-        <li><a href="#appointment" class="nav-link nav-cta">Book Now</a></li>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="treatments.html" class="nav-link">Treatments</a></li>
+        <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="location.html" class="nav-link">Location</a></li>
+        <li><a href="appointment.html" class="nav-link nav-cta">Book Now</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -99,12 +119,12 @@
         <div class="slide-bg" id="slideBg1"></div>
         <div class="slide-overlay"></div>
         <div class="slide-content">
-          <div class="slide-badge animate-in">🦷 Painless Dentistry</div>
-          <h1 class="slide-title animate-in">Painless Dental Treatments<br /><span class="highlight">You Can Trust 😊</span></h1>
-          <p class="slide-desc animate-in">Experience world-class dental care with zero pain, zero worry — right here in Hyderabad.</p>
+          <div class="slide-badge animate-in">🦷 Top Rated Center</div>
+          <h1 class="slide-title animate-in">Best Dental Center<br /><span class="highlight">in Dammaiguda,<br />Hyderabad</span></h1>
+          <p class="slide-desc animate-in">Vijaya Dental & Implant Center – Expert in Dental Implants, Root Canal Treatment, Teeth Cleaning & Cosmetic Dentistry</p>
           <div class="slide-actions animate-in">
-            <a href="#appointment" class="btn-primary" id="hero-book-btn">Book Appointment</a>
-            <a href="tel:07207726666" class="btn-outline">📞 Call Now</a>
+            <a href="tel:9177617437" class="btn-primary" id="hero-book-btn">Book Appointment</a>
+            <a href="tel:9177617437" class="btn-outline">📞 Call Now</a>
           </div>
         </div>
       </div>
@@ -114,30 +134,17 @@
         <div class="slide-bg" id="slideBg2"></div>
         <div class="slide-overlay"></div>
         <div class="slide-content">
-          <div class="slide-badge animate-in">⭐ Top Rated Clinic</div>
-          <h1 class="slide-title animate-in">130+ Happy Patients<br /><span class="highlight">5.0⭐ Rated</span></h1>
-          <p class="slide-desc animate-in">Join our family of satisfied patients who trust us for their complete dental health.</p>
+          <div class="slide-badge animate-in">⭐ 5.0 Rated Excellence</div>
+          <h1 class="slide-title animate-in">Top-Rated Dental Center in Hyderabad<br /><span class="highlight">with 700+ Satisfied Patients</span></h1>
+          <p class="slide-desc animate-in">5.0⭐ Rated Dental Center – Vijaya Dental & Implant Center. Trusted for Dental Implants, Root Canal Treatment, Teeth Cleaning & Smile Designing.</p>
           <div class="slide-actions animate-in">
-            <a href="tel:07207726666" class="btn-primary" id="hero-call-btn">📞 Call Now</a>
-            <a href="#reviews" class="btn-outline">Read Reviews</a>
+            <a href="tel:9177617437" class="btn-primary" id="hero-call-btn">📞 Call Now</a>
+            <a href="reviews.html" class="btn-outline">Read Reviews</a>
           </div>
         </div>
       </div>
 
-      <!-- Slide 3 -->
-      <div class="slide slide-3">
-        <div class="slide-bg" id="slideBg3"></div>
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-          <div class="slide-badge animate-in">💎 Premium Care</div>
-          <h1 class="slide-title animate-in">Affordable & Advanced<br /><span class="highlight">Dental Care in Hyderabad</span></h1>
-          <p class="slide-desc animate-in">State-of-the-art equipment, expert care, and prices that won't break your budget.</p>
-          <div class="slide-actions animate-in">
-            <a href="#appointment" class="btn-primary" id="hero-consult-btn">Get Consultation</a>
-            <a href="#services" class="btn-outline">Our Services</a>
-          </div>
-        </div>
-      </div>
+
 
     </div>
 
@@ -149,31 +156,9 @@
     <div class="slider-dots" id="sliderDots">
       <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
       <button class="dot" data-slide="1" aria-label="Slide 2"></button>
-      <button class="dot" data-slide="2" aria-label="Slide 3"></button>
     </div>
 
-    <!-- Stats Bar -->
-    <div class="hero-stats">
-      <div class="stat-item">
-        <span class="stat-num">5.0⭐</span>
-        <span class="stat-label">Google Rating</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-num">130+</span>
-        <span class="stat-label">Happy Patients</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-num">0%</span>
-        <span class="stat-label">Pain Guarantee</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-num">₹₹</span>
-        <span class="stat-label">Affordable Pricing</span>
-      </div>
-    </div>
+
   </section>
 
   <!-- ==============================
@@ -260,28 +245,14 @@
       <div class="about-grid">
         <div class="about-image-wrap reveal-left">
           <div class="about-img-card">
-            <img src="/doctor.jpg" alt="Dr. Venkatesh – Expert Dentist at Surya Dental Hyderabad" class="about-img" loading="lazy" />
-            <div class="about-badge">
-              <span class="badge-icon">🏅</span>
-              <div>
-                <strong>Experienced</strong>
-                <span>Dr. Venkatesh</span>
-              </div>
-            </div>
-          </div>
-          <div class="about-floating-card">
-            <div class="fc-icon">😊</div>
-            <div>
-              <strong>Painless Procedures</strong>
-              <span>100% Comfort Guaranteed</span>
-            </div>
+            <img src="./doctor.jpg" alt="Dr. Praveen R – Expert Dentist at Vijaya Dental Hyderabad" class="about-img" loading="lazy" />
           </div>
         </div>
 
         <div class="about-content reveal-right">
           <div class="section-tag">About Our Doctor</div>
-          <h2 class="section-title">Meet <span class="text-gradient">Dr. Venkatesh</span><br />Your Trusted Dental Expert</h2>
-          <p class="about-desc">With years of experience delivering exceptional dental care in Hyderabad, Dr. Venkatesh is known for his gentle approach, clear communication, and dedication to patient comfort. He listens, explains, and treats — making every visit stress-free.</p>
+          <h2 class="section-title">Meet <span class="text-gradient">Dr. Praveen R</span><br />Your Trusted Dental Expert</h2>
+          <p class="about-desc">Dr. Praveen R is a Cosmetic Dental Surgeon with 10+ years of experience. He specializes in advanced and painless dental treatments, dedicated to delivering confident and healthy smiles with a gentle approach and clear communication.</p>
 
           <div class="about-features">
             <div class="feature-item">
@@ -314,135 +285,135 @@
             </div>
           </div>
 
-          <a href="#appointment" class="btn-primary">Book with Dr. Venkatesh</a>
+          <a href="appointment.html" class="btn-primary">Book with Dr. Praveen R</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==============================
-       SERVICES
+       TREATMENTS
   ============================== -->
   <div class="section-wave wave-up" aria-hidden="true">
     <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f0f7ff"/></svg>
   </div>
-  <section class="services" id="services">
+  <section class="treatments" id="treatments">
     <div class="section-container">
       <div class="section-header reveal-up">
         <div class="section-tag">What We Offer</div>
-        <h2 class="section-title">Our <span class="text-gradient">Dental Services</span></h2>
+        <h2 class="section-title">Our <span class="text-gradient">Dental Treatments</span></h2>
         <p class="section-subtitle">Advanced treatments with the latest technology — affordable, painless, and effective.</p>
       </div>
 
-      <div class="services-grid">
+      <div class="treatments-grid">
 
-        <!-- Root Canal -->
-        <div class="service-card reveal-up" style="--delay: 0.1s" id="service-root-canal">
-          <div class="service-img-wrap">
-            <img src="/svc-rootcanal.jpg" alt="Painless Root Canal Treatment Hyderabad" loading="lazy" />
-            <div class="service-img-badge">🦷 Painless</div>
+        <!-- Invisalign -->
+        <div class="treatment-card reveal-up" style="--delay: 0.1s" id="treatment-invisalign">
+          <div class="treatment-img-wrap">
+            <img src="./svc-invisalign.jpg" alt="Invisalign Clear Aligners Hyderabad" loading="lazy" />
+            <div class="treatment-img-badge">✨ Modern</div>
           </div>
-          <div class="service-body">
-            <div class="service-icon-row">
-              <span class="service-icon-sm">🦷</span>
-              <div class="service-tag">Painless</div>
+          <div class="treatment-body">
+            <div class="treatment-icon-row">
+              <span class="treatment-icon-sm">✨</span>
+              <div class="treatment-tag">Invisible</div>
             </div>
-            <h3>Root Canal Treatment</h3>
-            <p>Our advanced painless root canal procedure saves your natural tooth with zero discomfort and fast recovery.</p>
-            <a href="#appointment" class="service-link">Book Now <span>→</span></a>
-          </div>
-        </div>
-
-        <!-- Wisdom Tooth -->
-        <div class="service-card reveal-up" style="--delay: 0.2s" id="service-wisdom-tooth">
-          <div class="service-img-wrap">
-            <img src="/svc-wisdom.jpg" alt="Wisdom Tooth Removal in Hyderabad" loading="lazy" />
-            <div class="service-img-badge">🔬 Expert Care</div>
-          </div>
-          <div class="service-body">
-            <div class="service-icon-row">
-              <span class="service-icon-sm">🔬</span>
-              <div class="service-tag">Expert Care</div>
-            </div>
-            <h3>Wisdom Tooth Removal</h3>
-            <p>Safe, comfortable wisdom tooth extraction with minimal recovery time and zero unnecessary pain.</p>
-            <a href="#appointment" class="service-link">Book Now <span>→</span></a>
-          </div>
-        </div>
-
-        <!-- Zirconia Crowns -->
-        <div class="service-card reveal-up" style="--delay: 0.3s" id="service-crowns">
-          <div class="service-img-wrap">
-            <img src="/svc-crown.jpg" alt="Zirconia Dental Crowns Hyderabad" loading="lazy" />
-            <div class="service-img-badge">👑 Premium</div>
-          </div>
-          <div class="service-body">
-            <div class="service-icon-row">
-              <span class="service-icon-sm">👑</span>
-              <div class="service-tag">Premium</div>
-            </div>
-            <h3>Zirconia Crowns</h3>
-            <p>Beautiful, durable zirconia crowns that match your natural teeth perfectly for a stunning smile.</p>
-            <a href="#appointment" class="service-link">Book Now <span>→</span></a>
+            <h3>Invisalign Aligners</h3>
+            <p>Perfectly straight teeth without metal braces using comfortable, clear, and removable aligners.</p>
+            <a href="invisalign.html" class="treatment-link">Learn More <span>→</span></a>
           </div>
         </div>
 
         <!-- Dental Implants -->
-        <div class="service-card reveal-up" style="--delay: 0.4s" id="service-implants">
-          <div class="service-img-wrap">
-            <img src="/svc-implants.jpg" alt="Dental Implants Hyderabad" loading="lazy" />
-            <div class="service-img-badge">⚙️ Long Lasting</div>
+        <div class="treatment-card reveal-up" style="--delay: 0.2s" id="treatment-implants">
+          <div class="treatment-img-wrap">
+            <img src="./svc-implants.jpg" alt="Permanent Dental Implants Hyderabad" loading="lazy" />
+            <div class="treatment-img-badge">⚙️ Permanent</div>
           </div>
-          <div class="service-body">
-            <div class="service-icon-row">
-              <span class="service-icon-sm">⚙️</span>
-              <div class="service-tag">Long Lasting</div>
+          <div class="treatment-body">
+            <div class="treatment-icon-row">
+              <span class="treatment-icon-sm"><i data-lucide="settings"></i></span>
+              <div class="treatment-tag">Replacement</div>
             </div>
             <h3>Dental Implants</h3>
             <p>Permanent, natural-looking tooth replacements that restore your smile and confidence for life.</p>
-            <a href="#appointment" class="service-link">Book Now <span>→</span></a>
+            <a href="dental-implants.html" class="treatment-link">Learn More <span>→</span></a>
           </div>
         </div>
 
-        <!-- Smile Correction -->
-        <div class="service-card reveal-up" style="--delay: 0.5s" id="service-smile">
-          <div class="service-img-wrap">
-            <img src="/svc-smile.jpg" alt="Smile Correction Hyderabad" loading="lazy" />
-            <div class="service-img-badge">😄 Aesthetic</div>
+        <!-- Smile Designing -->
+        <div class="treatment-card reveal-up" style="--delay: 0.3s" id="treatment-smile">
+          <div class="treatment-img-wrap">
+            <img src="./svc-smile.jpg" alt="Smile Designing Hyderabad" loading="lazy" />
+            <div class="treatment-img-badge">😄 Aesthetic</div>
           </div>
-          <div class="service-body">
-            <div class="service-icon-row">
-              <span class="service-icon-sm">😄</span>
-              <div class="service-tag">Aesthetic</div>
+          <div class="treatment-body">
+            <div class="treatment-icon-row">
+              <span class="treatment-icon-sm"><i data-lucide="smile"></i></span>
+              <div class="treatment-tag">Aesthetic</div>
             </div>
-            <h3>Smile Correction</h3>
-            <p>Transform your smile with comprehensive smile design using veneers, bleaching, and more.</p>
-            <a href="#appointment" class="service-link">Book Now <span>→</span></a>
+            <h3>Smile Designing</h3>
+            <p>Transform your smile with comprehensive design and advanced treatments for a perfect look.</p>
+            <a href="smile-designing.html" class="treatment-link">Learn More <span>→</span></a>
           </div>
         </div>
 
-        <!-- Teeth Cleaning -->
-        <div class="service-card reveal-up" style="--delay: 0.6s" id="service-cleaning">
-          <div class="service-img-wrap">
-            <img src="/svc-cleaning.jpg" alt="Professional Teeth Cleaning Hyderabad" loading="lazy" />
-            <div class="service-img-badge">✨ Preventive</div>
+        <!-- Root Canal -->
+        <div class="treatment-card reveal-up" style="--delay: 0.4s" id="treatment-root-canal">
+          <div class="treatment-img-wrap">
+            <img src="./svc-rootcanal.jpg" alt="Painless Root Canal Treatment Hyderabad" loading="lazy" />
+            <div class="treatment-img-badge">🦷 Painless</div>
           </div>
-          <div class="service-body">
-            <div class="service-icon-row">
-              <span class="service-icon-sm">✨</span>
-              <div class="service-tag">Preventive</div>
+          <div class="treatment-body">
+            <div class="treatment-icon-row">
+              <span class="treatment-icon-sm"><i data-lucide="activity"></i></span>
+              <div class="treatment-tag">Painless</div>
             </div>
-            <h3>Teeth Cleaning</h3>
-            <p>Professional scaling and polishing for sparkling clean teeth and healthier gums in one session.</p>
-            <a href="#appointment" class="service-link">Book Now <span>→</span></a>
+            <h3>Root Canal Treatment</h3>
+            <p>Our advanced painless procedure saves your natural tooth with zero discomfort and fast recovery.</p>
+            <a href="root-canal.html" class="treatment-link">Learn More <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Crowns & Bridges -->
+        <div class="treatment-card reveal-up" style="--delay: 0.5s" id="treatment-crown">
+          <div class="treatment-img-wrap">
+            <img src="./svc-crown.jpg" alt="Dental Crowns and Bridges Hyderabad" loading="lazy" />
+            <div class="treatment-img-badge">👑 Premium</div>
+          </div>
+          <div class="treatment-body">
+            <div class="treatment-icon-row">
+              <span class="treatment-icon-sm"><i data-lucide="crown"></i></span>
+              <div class="treatment-tag">Restoration</div>
+            </div>
+            <h3>Crowns & Bridges</h3>
+            <p>Durable restorations that match your natural teeth perfectly for a stunning and strong smile.</p>
+            <a href="crowns-bridges.html" class="treatment-link">Learn More <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Whitening -->
+        <div class="treatment-card reveal-up" style="--delay: 0.6s" id="treatment-whitening">
+          <div class="treatment-img-wrap">
+            <img src="./svc-whitening.jpg" alt="Professional Teeth Whitening Hyderabad" loading="lazy" />
+            <div class="treatment-img-badge">✨ Brighten</div>
+          </div>
+          <div class="treatment-body">
+            <div class="treatment-icon-row">
+              <span class="treatment-icon-sm"><i data-lucide="zap"></i></span>
+              <div class="treatment-tag">Cosmetic</div>
+            </div>
+            <h3>Teeth Whitening</h3>
+            <p>Professional treatments to remove stains and give you a bright, sparkling white smile in one session.</p>
+            <a href="teeth-whitening.html" class="treatment-link">Learn More <span>→</span></a>
           </div>
         </div>
 
       </div>
 
-      <div class="services-cta reveal-up">
+      <div class="treatments-cta reveal-up">
         <a href="#appointment" class="btn-primary">📅 Book Any Treatment</a>
-        <a href="tel:07207726666" class="btn-outline-blue">📞 Call 072077 26666</a>
+        <a href="tel:9177617437" class="btn-outline-blue">📞 Call 91776 17437</a>
       </div>
     </div>
   </section>
@@ -478,7 +449,7 @@
               </div>
               <div class="google-badge">G</div>
             </div>
-            <p>"The root canal treatment was completely painless — I was shocked! Dr. Venkatesh explained everything before starting. Best dental experience ever."</p>
+            <p>"The root canal treatment was completely painless — I was shocked! Dr. Praveen explained everything before starting. Best dental experience ever."</p>
             <div class="tcard-date">3 weeks ago</div>
           </div>
 
@@ -491,7 +462,7 @@
               </div>
               <div class="google-badge">G</div>
             </div>
-            <p>"Very affordable and the doctor is so professional! My wisdom tooth was removed without any pain. The clinic is very hygienic and comfortable."</p>
+            <p>"Very affordable and the doctor is so professional! My wisdom tooth was removed without any pain. The Center is very hygienic and comfortable."</p>
             <div class="tcard-date">1 month ago</div>
           </div>
 
@@ -504,7 +475,7 @@
               </div>
               <div class="google-badge">G</div>
             </div>
-            <p>"Dr. Venkatesh explained everything so clearly! I was very nervous about getting implants, but he made me feel completely at ease. Superb results!"</p>
+            <p>"Dr. Praveen explained everything so clearly! I was very nervous about getting implants, but he made me feel completely at ease. Superb results!"</p>
             <div class="tcard-date">2 months ago</div>
           </div>
 
@@ -517,7 +488,7 @@
               </div>
               <div class="google-badge">G</div>
             </div>
-            <p>"Excellent clinic with very affordable prices. Got my zirconia crown fitted perfectly. The staff is very welcoming and the environment is very clean."</p>
+            <p>"Excellent Center with very affordable prices. Got my zirconia crown fitted perfectly. The staff is very welcoming and the environment is very clean."</p>
             <div class="tcard-date">6 weeks ago</div>
           </div>
 
@@ -530,7 +501,7 @@
               </div>
               <div class="google-badge">G</div>
             </div>
-            <p>"I've been coming here for 2 years. Dr. Venkatesh is genuinely compassionate. Hindi-friendly clinic — felt very comfortable as a non-Telugu speaker!"</p>
+            <p>"I've been coming here for 2 years. Dr. Praveen is genuinely compassionate. Hindi-friendly Center — felt very comfortable as a non-Telugu speaker!"</p>
             <div class="tcard-date">5 weeks ago</div>
           </div>
 
@@ -543,7 +514,7 @@
               </div>
               <div class="google-badge">G</div>
             </div>
-            <p>"My smile correction has completely transformed my confidence! The whole procedure was smooth and affordable. Highly recommend Surya Dental!"</p>
+            <p>"My smile correction has completely transformed my confidence! The whole procedure was smooth and affordable. Highly recommend Vijaya Dental!"</p>
             <div class="tcard-date">2 weeks ago</div>
           </div>
 
@@ -551,8 +522,8 @@
       </div>
 
       <div class="reviews-cta reveal-up">
-        <a href="tel:07207726666" class="btn-primary">📞 Call & Book Now</a>
-        <a href="https://g.co/kgs/suryadental" target="_blank" class="btn-outline" rel="noopener">Read All Reviews on Google</a>
+        <a href="tel:9177617437" class="btn-primary">📞 Call & Book Now</a>
+        <a href="https://g.co/kgs/vijayadental" target="_blank" class="btn-outline" rel="noopener">Read All Reviews on Google</a>
       </div>
     </div>
   </section>
@@ -564,38 +535,38 @@
     <div class="section-container">
       <div class="section-header reveal-up">
         <div class="section-tag">Our Promise</div>
-        <h2 class="section-title">Why Choose <span class="text-gradient">Surya Dental?</span></h2>
+        <h2 class="section-title">Why Choose <span class="text-gradient">Vijaya Dental?</span></h2>
         <p class="section-subtitle">We go beyond treatment — we deliver an experience you'll want to tell your friends about.</p>
       </div>
 
       <div class="why-grid">
         <div class="why-card reveal-up" style="--delay:0.1s" id="why-painless">
-          <div class="why-icon">😌</div>
+          <div class="why-icon icon-painless"><i data-lucide="heart-handshake"></i></div>
           <h3>Painless Procedures</h3>
           <p>Advanced numbing techniques and gentle care ensure you feel nothing but relief.</p>
         </div>
         <div class="why-card reveal-up" style="--delay:0.2s" id="why-affordable">
-          <div class="why-icon">💰</div>
+          <div class="why-icon icon-pricing"><i data-lucide="banknote"></i></div>
           <h3>Affordable Pricing</h3>
           <p>Premium dental treatments at prices that respect your budget — no hidden fees.</p>
         </div>
         <div class="why-card reveal-up" style="--delay:0.3s" id="why-doctor">
-          <div class="why-icon">👨‍⚕️</div>
+          <div class="why-icon icon-doctor"><i data-lucide="user-check"></i></div>
           <h3>Friendly Doctor</h3>
-          <p>Dr. Venkatesh's warm personality makes every patient feel welcome and safe.</p>
+          <p>Dr. Praveen R's professional yet warm personality makes every patient feel welcome and safe.</p>
         </div>
         <div class="why-card reveal-up" style="--delay:0.4s" id="why-hygiene">
-          <div class="why-icon">🧼</div>
-          <h3>Hygienic Clinic</h3>
+          <div class="why-icon icon-hygiene"><i data-lucide="shield-check"></i></div>
+          <h3>Hygienic Center</h3>
           <p>Strict sterilization and infection control protocols for your complete safety.</p>
         </div>
         <div class="why-card reveal-up" style="--delay:0.5s" id="why-comfort">
-          <div class="why-icon">🛋️</div>
+          <div class="why-icon icon-comfort"><i data-lucide="sofa"></i></div>
           <h3>Comfortable Experience</h3>
           <p>Relaxing environment designed to ease dental anxiety from the moment you walk in.</p>
         </div>
         <div class="why-card reveal-up" style="--delay:0.6s" id="why-personalized">
-          <div class="why-icon">🎯</div>
+          <div class="why-icon icon-custom"><i data-lucide="target"></i></div>
           <h3>Personalized Treatment</h3>
           <p>Every treatment plan is tailored specifically to your unique dental needs.</p>
         </div>
@@ -609,34 +580,34 @@
   <section class="gallery" id="gallery">
     <div class="section-container">
       <div class="section-header reveal-up">
-        <div class="section-tag">Our Clinic</div>
-        <h2 class="section-title">Clinic <span class="text-gradient">Gallery</span></h2>
-        <p class="section-subtitle">A glimpse inside our modern, welcoming, and hygienic dental clinic.</p>
+        <div class="section-tag">Our Center</div>
+        <h2 class="section-title">Center <span class="text-gradient">Gallery</span></h2>
+        <p class="section-subtitle">A glimpse inside our modern, welcoming, and hygienic dental Center.</p>
       </div>
 
       <div class="gallery-grid">
-        <div class="gallery-item reveal-up" style="--delay:0.1s" data-src="/gallery1.jpg" id="gallery-item-1">
-          <img src="/gallery1.jpg" alt="Surya Dental Clinic Treatment Room" loading="lazy" />
+        <div class="gallery-item reveal-up" style="--delay:0.1s" data-src="./gallery1.jpg" id="gallery-item-1">
+          <img src="./gallery1.jpg" alt="Vijaya Dental Center Treatment Room" loading="lazy" />
           <div class="gallery-overlay"><span>🔍 View</span></div>
         </div>
-        <div class="gallery-item reveal-up" style="--delay:0.2s" data-src="/gallery2.jpg" id="gallery-item-2">
-          <img src="/gallery2.jpg" alt="Dental Treatment at Surya Dental Hyderabad" loading="lazy" />
+        <div class="gallery-item reveal-up" style="--delay:0.2s" data-src="./gallery2.jpg" id="gallery-item-2">
+          <img src="./gallery2.jpg" alt="Dental Treatment at Vijaya Dental Hyderabad" loading="lazy" />
           <div class="gallery-overlay"><span>🔍 View</span></div>
         </div>
-        <div class="gallery-item reveal-up" style="--delay:0.3s" data-src="/gallery3.jpg" id="gallery-item-3">
-          <img src="/gallery3.jpg" alt="Smile Transformation Results" loading="lazy" />
+        <div class="gallery-item reveal-up" style="--delay:0.3s" data-src="./gallery3.jpg" id="gallery-item-3">
+          <img src="./gallery3.jpg" alt="Smile Transformation Results" loading="lazy" />
           <div class="gallery-overlay"><span>🔍 View</span></div>
         </div>
-        <div class="gallery-item gallery-wide reveal-up" style="--delay:0.4s" data-src="/hero1.jpg" id="gallery-item-4">
-          <img src="/hero1.jpg" alt="Modern Dental Clinic Interior Hyderabad" loading="lazy" />
+        <div class="gallery-item gallery-wide reveal-up" style="--delay:0.4s" data-src="./hero1.jpg" id="gallery-item-4">
+          <img src="./hero1.jpg" alt="Modern Dental Center Interior Hyderabad" loading="lazy" />
           <div class="gallery-overlay"><span>🔍 View</span></div>
         </div>
-        <div class="gallery-item reveal-up" style="--delay:0.5s" data-src="/hero2.jpg" id="gallery-item-5">
-          <img src="/hero2.jpg" alt="Happy Patients at Surya Dental" loading="lazy" />
+        <div class="gallery-item reveal-up" style="--delay:0.5s" data-src="./hero2.jpg" id="gallery-item-5">
+          <img src="./hero2.jpg" alt="Happy Patients at Vijaya Dental" loading="lazy" />
           <div class="gallery-overlay"><span>🔍 View</span></div>
         </div>
-        <div class="gallery-item reveal-up" style="--delay:0.6s" data-src="/hero3.jpg" id="gallery-item-6">
-          <img src="/hero3.jpg" alt="Surya Dental Reception Area" loading="lazy" />
+        <div class="gallery-item reveal-up" style="--delay:0.6s" data-src="./hero3.jpg" id="gallery-item-6">
+          <img src="./hero3.jpg" alt="Vijaya Dental Reception Area" loading="lazy" />
           <div class="gallery-overlay"><span>🔍 View</span></div>
         </div>
       </div>
@@ -667,20 +638,21 @@
             <div class="loc-icon">📍</div>
             <div>
               <strong>Address</strong>
-              <p>Opp. Renova Neelima Hospital,<br />Shivaji Nagar, Sanath Nagar,<br />Hyderabad, Telangana 500018</p>
+              <p>Beside RR hospital,<br />P S Rao Nagar, Dammaiguda,<br />Hyderabad, Telangana 500083</p>
+              <p style="font-size: 0.8rem; margin-top: 0.4rem; color: var(--primary); font-weight: 600;">Plus Code: GH2R+3V Secunderabad</p>
             </div>
           </div>
           <div class="loc-card" id="loc-phone">
             <div class="loc-icon">📞</div>
             <div>
               <strong>Phone</strong>
-              <p><a href="tel:07207726666">072077 26666</a></p>
+              <p><a href="tel:9177617437">91776 17437</a></p>
             </div>
           </div>
           <div class="loc-card" id="loc-hours">
             <div class="loc-icon">🕙</div>
             <div>
-              <strong>Clinic Hours</strong>
+              <strong>Center Hours</strong>
               <p>Monday – Sunday<br />Opens at 10:00 AM</p>
             </div>
           </div>
@@ -691,22 +663,22 @@
               <p>Telugu · Hindi · English<br />LGBTQ+ Friendly 🏳️‍🌈</p>
             </div>
           </div>
-          <a href="https://maps.app.goo.gl/suryadental" target="_blank" rel="noopener" class="btn-primary" id="get-directions-btn" style="margin-top:1rem">
-            📍 Get Directions
+          <a href="https://maps.app.goo.gl/1b5e2b1ecf9f6752" target="_blank" rel="noopener" class="btn-primary" id="get-directions-btn" style="margin-top:1rem">
+            📍 Get Directions on Google Maps
           </a>
         </div>
 
         <div class="location-map reveal-right">
           <div class="map-wrapper">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.042!2d78.43601!3d17.46067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSanath+Nagar%2C+Hyderabad!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.105!2d78.5921875!3d17.5001875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9dc8f6ee3303%3A0x1b5e2b1ecf9f6752!2sVijaya%20Dental%20%26%20Implant%20Center%2C%20Dammaiguda!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style="border:0;"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              title="Surya Dental & Medical Clinic Location"
+              title="Vijaya Dental & Implant Center Location"
             ></iframe>
           </div>
         </div>
@@ -788,12 +760,8 @@
     <div class="footer-container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="#home" class="nav-logo">
-            <span class="logo-icon">🦷</span>
-            <div class="logo-text">
-              <span class="logo-main">Surya Dental</span>
-              <span class="logo-sub">& Medical Clinic</span>
-            </div>
+          <a href="index.html" class="nav-logo">
+            <img src="vijayalogog (1).jpg" alt="Vijaya Dental & Implant Center Logo" class="logo-img" /><div class="logo-text"><span class="logo-main">Vijaya Dental</span><span class="logo-sub">& Implant Center</span></div>
           </a>
           <p>Delivering painless, affordable, and world-class dental care in Hyderabad since day one.</p>
           <div class="footer-rating">⭐⭐⭐⭐⭐ <strong>5.0</strong> · 130+ Reviews</div>
@@ -803,39 +771,43 @@
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#appointment">Book Appointment</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="treatments.html">Treatments</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="appointment.html">Book Appointment</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Services</h4>
+          <h4>Treatments</h4>
           <ul>
-            <li><a href="#services">Root Canal Treatment</a></li>
-            <li><a href="#services">Wisdom Tooth Removal</a></li>
-            <li><a href="#services">Zirconia Crowns</a></li>
-            <li><a href="#services">Dental Implants</a></li>
-            <li><a href="#services">Smile Correction</a></li>
-            <li><a href="#services">Teeth Cleaning</a></li>
+            <li><a href="invisalign.html">Invisalign Aligners</a></li>
+            <li><a href="braces.html">Teeth Braces</a></li>
+            <li><a href="dental-implants.html">Dental Implants</a></li>
+            <li><a href="smile-designing.html">Smile Designing</a></li>
+            <li><a href="root-canal.html">Root Canal Treatment</a></li>
+            <li><a href="crowns-bridges.html">Crowns & Bridges</a></li>
+            <li><a href="flap-surgery.html">Flap Surgery</a></li>
+            <li><a href="teeth-whitening.html">Teeth Whitening</a></li>
+            <li><a href="impacted-teeth.html">Impacted Teeth</a></li>
+            <li><a href="full-mouth-rehabilitation.html">Full Mouth Rehabilitation</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Contact Us</h4>
           <div class="footer-contact">
-            <p>📍 Opp. Renova Neelima Hospital, Shivaji Nagar, Sanath Nagar, Hyderabad</p>
-            <p><a href="tel:07207726666">📞 072077 26666</a></p>
+            <p>📍 Beside RR hospital, P S Rao Nagar, Dammaiguda, Hyderabad</p>
+            <p><a href="tel:9177617437">📞 91776 17437</a></p>
             <p>🕙 Opens 10:00 AM Daily</p>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>© 2025 Surya Dental & Medical Clinic. All rights reserved.</p>
-        <p class="footer-seo">Best Dental Clinic in Sanath Nagar | Painless Root Canal Hyderabad | Affordable Dentist Near Me</p>
+        <p>© 2025 Vijaya Dental & Implant Center. All rights reserved.</p>
+        <p class="footer-seo">Best Dental Center in Dammaiguda | Painless Root Canal Hyderabad | Affordable Dentist Near Me</p>
       </div>
     </div>
   </footer>
@@ -843,12 +815,12 @@
   <!-- ==============================
        FLOATING BUTTONS
   ============================== -->
-  <a href="tel:07207726666" class="fab-call" id="fab-call" aria-label="Call Now">
+  <a href="tel:9177617437" class="fab-call" id="fab-call" aria-label="Call Now">
     <span>📞</span>
     <span class="fab-label">Call Now</span>
   </a>
 
-  <a href="https://wa.me/917207726666?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Surya%20Dental%20Clinic" target="_blank" rel="noopener" class="fab-whatsapp" id="fab-whatsapp" aria-label="WhatsApp">
+  <a href="https://wa.me/919177617437?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Vijaya%20Dental%20Center" target="_blank" rel="noopener" class="fab-whatsapp" id="fab-whatsapp" aria-label="WhatsApp">
     <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
     </svg>
@@ -861,11 +833,14 @@
       <div class="modal-icon">✅</div>
       <h3>Appointment Requested!</h3>
       <p>Thank you! We'll call you within 30 minutes to confirm your appointment.</p>
-      <a href="tel:07207726666" class="btn-primary">📞 Call Us Now</a>
+      <a href="tel:9177617437" class="btn-primary">📞 Call Us Now</a>
       <button class="modal-close" id="modalClose">Close</button>
     </div>
   </div>
 
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="src/main.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>

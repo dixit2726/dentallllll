@@ -1,8 +1,8 @@
 {
-  "name": "surya-dental",
+  "name": "vijaya-dental",
   "private": true,
   "version": "1.0.0",
-  "description": "Surya Dental & Medical Clinic – Premium Dental Website",
+  "description": "Vijaya Dental & Medical Clinic – Premium Dental Website",
   "type": "module",
   "scripts": {
     "dev": "vite",
