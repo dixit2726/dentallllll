@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,15 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Primary SEO Meta Tags -->
-  <title>Teeth Braces Treatment | Best Orthodontist in Dammaiguda, Hyderabad</title>
-  <meta name="description" content="Looking for the best teeth braces treatment in Dammaiguda, Hyderabad? Detailed guide on metal, ceramic, and lingual braces. Expert orthodontic care at Vijaya Dental." />
-  <meta name="keywords" content="teeth braces Dammaiguda, orthodontist Hyderabad, best braces treatment Hyderabad, metal braces Dammaiguda, ceramic braces Hyderabad, teeth alignment Hyderabad" />
+  <title>Teeth Braces in Dammaiguda, Hyderabad | Best Orthodontist – Vijaya Dental</title>
+  <meta name="description" content="Get the perfect smile with advanced teeth braces at Vijaya Dental, Dammaiguda. Specializing in Metal, Ceramic, and Self-Ligating braces for kids and adults. 2500+ words of expert orthodontic guidance to help you choose the best braces in Hyderabad." />
+  <meta name="keywords" content="teeth braces Dammaiguda, best orthodontist Hyderabad, dental braces cost Hyderabad, ceramic braces Dammaiguda, metal braces Hyderabad, self-ligating braces Hyderabad, orthodontic treatment Dammaiguda, Vijaya Dental braces" />
   <meta name="author" content="Vijaya Dental & Implant Center" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Teeth Braces Treatment in Dammaiguda, Hyderabad | Vijaya Dental" />
-  <meta property="og:description" content="Comprehensive guide to teeth braces. Discover the best orthodontic solutions for a perfect smile at Vijaya Dental & Implant Center." />
+  <meta property="og:title" content="Expert Teeth Braces in Dammaiguda, Hyderabad | Vijaya Dental" />
+  <meta property="og:description" content="Straighten your teeth and boost your confidence with our range of orthodontic solutions. Expert care for all ages at Vijaya Dental & Implant Center." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_IN" />
 
@@ -40,7 +40,7 @@
     .braces-hero {
       position: relative;
       padding: 180px 0 120px;
-      background: linear-gradient(135deg, #0c3a82 0%, #1a6bcc 100%);
+      background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
       color: white;
       text-align: center;
       overflow: hidden;
@@ -48,9 +48,9 @@
     .braces-hero-bg {
       position: absolute;
       inset: 0;
-      background: url('./braces-hero.png') center/cover no-repeat;
-      opacity: 0.3;
-      mix-blend-mode: overlay;
+      background: url('./images/general/orthodontic-hero.webp') center/cover no-repeat;
+      opacity: 0.6;
+      mix-blend-mode: multiply;
     }
     .braces-hero .section-container { position: relative; z-index: 2; }
     
@@ -69,35 +69,21 @@
     }
     .content-img:hover { transform: scale(1.02); }
     
-    .detailed-text { line-height: 1.8; color: var(--text-muted); }
-    .detailed-text p { margin-bottom: 1.5rem; }
-    .detailed-text h3 { color: var(--text-dark); margin: 2rem 0 1rem; font-size: 1.75rem; }
+    .detailed-text { line-height: 1.8; color: var(--text-muted); font-size: 1.05rem; }
+    .detailed-text p { margin-bottom: 1.8rem; }
+    .detailed-text h2 { margin-top: 3.5rem; margin-bottom: 1.5rem; color: var(--text-dark); }
+    .detailed-text h3 { color: var(--primary); margin: 2.5rem 0 1.2rem; font-size: 1.85rem; font-weight: 700; }
+    .detailed-text h4 { color: var(--text-dark); margin: 1.5rem 0 1rem; font-size: 1.4rem; font-weight: 700; }
     
-    .journey-step {
-      display: flex;
-      gap: 2rem;
-      margin-bottom: 3rem;
-      position: relative;
+    .feature-card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s var(--ease-spring);
     }
-    .journey-step::before {
-      content: '';
-      position: absolute;
-      left: 20px; top: 50px; bottom: -40px;
-      width: 2px;
-      background: var(--border);
-    }
-    .journey-step:last-child::before { display: none; }
-    .step-num {
-      flex-shrink: 0;
-      width: 44px; height: 44px;
-      background: var(--blue-gradient);
-      color: white;
-      display: grid; place-items: center;
-      border-radius: 50%;
-      font-weight: 800;
-      z-index: 1;
-      box-shadow: 0 0 0 8px rgba(26,107,204,0.1);
-    }
+    .feature-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: var(--primary); }
     
     .faq-card {
       background: white;
@@ -105,44 +91,32 @@
       border-radius: var(--radius-lg);
       border: 1px solid #eef2f6;
       box-shadow: 0 4px 20px rgba(0,0,0,0.03);
-      transition: all 0.3s var(--ease-spring);
+      margin-bottom: 1.5rem;
     }
-    .faq-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.06); border-color: rgba(26,107,204,0.2); }
-    .faq-card h3 { color: var(--primary); font-size: 1.15rem; font-weight: 700; margin-bottom: 0.85rem; }
+    .faq-card h3 { color: var(--primary); font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; }
     .faq-card p { color: #64748b; line-height: 1.7; }
-    .diet-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-top: 1.5rem;
-    }
-    .diet-list h4 { margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
-    .diet-list ul { list-style: none; }
-    .diet-list li { margin-bottom: 0.5rem; display: flex; gap: 0.5rem; align-items: center; }
+
+    .seo-rich-content { max-width: 1100px; margin: 0 auto; }
 
     @media (max-width: 992px) {
       .content-grid { grid-template-columns: 1fr; gap: 3rem; }
-      .diet-list { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body style="opacity: 0; transition: opacity 0.6s ease;">
 
-  <!-- ==============================
-       NAVIGATION
-  ============================== -->
+  <!-- NAVIGATION -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
-        <img src="vijayalogog (1).jpg" alt="Vijaya Dental & Implant Center Logo" class="logo-img" /><div class="logo-text"><span class="logo-main">Vijaya Dental</span><span class="logo-sub">& Implant Center</span></div>
+        <img src="images/general/vijaya-dental-logo-v2.webp" alt="Vijaya Dental & Implant Center Logo" class="logo-img" /><div class="logo-text"><span class="logo-main">Vijaya Dental</span><span class="logo-sub">& Implant Center</span></div>
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
         <li><a href="treatments.html" class="nav-link">Treatments</a></li>
-        <li><a href="reviews.html" class="nav-link">Reviews</a></li>
         <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-        <li><a href="location.html" class="nav-link">Location</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
         <li><a href="appointment.html" class="nav-link nav-cta">Book Now</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -151,254 +125,295 @@
     </div>
   </nav>
 
-  <!-- ==============================
-       HERO SECTION
-  ============================== -->
+  <!-- HERO SECTION -->
   <section class="braces-hero">
     <div class="braces-hero-bg"></div>
     <div class="section-container">
-      <div class="section-tag" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); color:white;">Comprehensive Orthodontics</div>
-      <h1 class="section-title" style="color: white; font-size: clamp(2.5rem, 6vw, 4rem);">Teeth <span style="color:var(--accent-teal)">Braces</span> Guide</h1>
-      <p style="max-width: 800px; margin: 0 auto 2.5rem; opacity: 0.95; font-size: 1.25rem; line-height: 1.6;">Everything you need to know about achieving a perfectly aligned smile with the best braces treatment in Dammaiguda, Hyderabad.</p>
+      <div class="section-tag" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); color:white;">Orthodontic Specialists</div>
+      <h1 class="section-title" style="color: white; font-size: clamp(2.5rem, 6vw, 4.5rem);">Perfect Smile with <span style="color:var(--accent-teal)">Teeth Braces</span></h1>
+      <p style="max-width: 850px; margin: 0 auto 2.5rem; opacity: 0.6; font-size: 1.3rem; line-height: 1.6;">Straighten your teeth, correct your bite, and transform your confidence with advanced orthodontic care at Vijaya Dental, Hyderabad.</p>
       <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="#appointment" class="btn-primary">Book Consultation</a>
-        <a href="#journey" class="btn-outline" style="border-color: white; color: white;">The Journey</a>
+        <a href="#appointment" class="btn-primary">Book Ortho Consultation</a>
+        <a href="#seo-guide" class="btn-outline" style="border-color: white; color: white;">The Braces Guide</a>
       </div>
     </div>
   </section>
 
-  <!-- ==============================
-       CHAPTER 1: INTRODUCTION
-  ============================== -->
-  <section class="content-section">
+  <!-- MAIN SEO RICH CONTENT -->
+  <section class="content-section" id="seo-guide">
     <div class="section-container">
-      <div class="content-grid">
-        <div class="reveal-left detailed-text">
-          <div class="section-tag">Understanding Braces</div>
-          <h2 class="section-title">The Foundation of a <span class="text-gradient">Perfect Smile</span></h2>
-          <p>Teeth braces are one of the most trusted and effective orthodontic solutions for achieving a perfectly aligned smile. Whether you are dealing with crooked teeth, gaps, or complex bite issues, braces offer a permanent solution that improves both your facial aesthetics and long-term oral health.</p>
-          <p>In the heart of Dammaiguda, Hyderabad, <strong>Vijaya Dental & Implant Center</strong> has established itself as a hub for advanced orthodontic care. We believe that a straight smile is more than just a cosmetic upgrade; it's a gateway to better dental hygiene, clearer speech, and a massive boost in self-confidence.</p>
-          <p>Braces work by applying consistent, controlled pressure to your teeth, causing them to move into the correct position. This biological process involve the remodeling of the bone surrounding the tooth roots. Under the expert supervision of our orthodontists, this journey is safe, predictable, and highly rewarding.</p>
-        </div>
-        <div class="reveal-right">
-          <img src="./braces-metal.png" alt="Traditional Metal Braces Detail" class="content-img" />
-          <p style="text-align: center; margin-top: 1rem; font-style: italic; color: var(--text-muted);">High-quality traditional metal braces — the gold standard for complex cases.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==============================
-       CHAPTER 2: TYPES IN DETAIL
-  ============================== -->
-  <section class="content-section" style="background: var(--bg-section);">
-    <div class="section-container">
-      <div class="section-header reveal-up">
-        <div class="section-tag">Deep Dive</div>
-        <h2 class="section-title">Choosing the <span class="text-gradient">Right Braces</span></h2>
-        <p class="section-subtitle">Modern orthodontics offers a variety of paths to alignment. Here’s a detailed breakdown of each.</p>
-      </div>
-
-      <div class="content-grid" style="margin-top: 4rem;">
-        <div class="reveal-left">
-           <img src="./braces-adjustment.png" alt="Braces Adjustment Process" class="content-img" />
-        </div>
-        <div class="reveal-right detailed-text">
-           <h3>1. Traditional Metal Braces</h3>
-           <p>Despite the rise of clear aligners, metal braces remain the most effective tool for correcting severe overcrowding and complex jaw misalignments. Modern metal brackets are significantly smaller and more comfortable than those of the past. Made from high-grade stainless steel, they are durable and offer the most precise control over tooth movement.</p>
-           
-           <h3>2. Ceramic (Clear) Braces</h3>
-           <p>Ceramic braces are favored by adults and teens who want the power of traditional braces without the "metal mouth" look. The brackets are made of translucent ceramic material that blends with your natural tooth color. While they require a bit more care regarding staining foods, they offer a beautiful, discreet aesthetic.</p>
-           
-           <h3>3. Lingual Braces</h3>
-           <p>For those who want their treatment to be completely hidden, lingual braces are the ultimate solution. These are custom-made brackets fixed to the <em>back</em> of your teeth. They are virtually invisible from the front, allowing you to straighten your teeth in total secrecy.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==============================
-       CHAPTER 3: THE JOURNEY
-  ============================== -->
-  <section class="content-section" id="journey">
-    <div class="section-container">
-      <div class="section-header reveal-up">
-        <h2 class="section-title">Your Orthodontic <span class="text-gradient">Journey</span></h2>
-        <p class="section-subtitle">What to expect from day one to the final reveal at Vijaya Dental.</p>
-      </div>
-
-      <div style="max-width: 900px; margin: 4rem auto 0;">
-        <div class="journey-step reveal-up">
-          <div class="step-num">1</div>
-          <div>
-            <h3>The Initial Consultation</h3>
-            <p>We start with a thorough clinical examination, including digital X-rays and 3D scans. This allows our orthodontists to see the root positions and jaw structure, enabling the creation of a personalized treatment roadmap.</p>
-          </div>
-        </div>
+      <div class="seo-rich-content detailed-text">
+        <div class="section-tag">Orthodontic Guide</div>
+        <h2 class="section-title">The Ultimate Guide to <span class="text-gradient">Teeth Braces</span></h2>
         
-        <div class="journey-step reveal-up">
-          <div class="step-num">2</div>
-          <div>
-            <h3>Bonding Appointment</h3>
-            <p>This is the "big day" when your braces are applied. We carefully clean your teeth and use a specialized adhesive to bond each bracket. The archwire is then threaded through and secured. The process is painless and takes about 60-90 minutes.</p>
-          </div>
+        <p>A beautiful, straight smile is more than just an aesthetic asset; it is a fundamental component of oral health. Misaligned teeth, also known as malocclusion, can lead to a host of problems, including difficulty cleaning between teeth, increased risk of gum disease, abnormal wear of tooth enamel, and even jaw pain. At <strong>Vijaya Dental & Implant Center</strong> in Dammaiguda, Hyderabad, we specialize in advanced orthodontic solutions that cater to patients of all ages. This 2500+ word guide is designed to help you understand the science of teeth braces, the types available, and why choosing the right specialist is critical for your long-term health.</p>
+
+        <div class="content-grid" style="margin: 4rem 0;">
+            <div class="reveal-left">
+                <h3>Why Orthodontic Treatment Matters</h3>
+                <p>Orthodontics is the branch of dentistry focused on the diagnosis, prevention, and correction of malpositioned teeth and jaws. When your teeth are straight, they are easier to brush and floss, which significantly reduces the risk of tooth decay and periodontal disease. Furthermore, a proper bite ensures that your jaw muscles are not overworked, preventing chronic headaches and TMJ (Temporomandibular Joint) disorders.</p>
+                <p>Beyond the health benefits, the psychological impact of a straight smile is profound. It boosts self-esteem, improves facial aesthetics, and can truly transform a person's confidence in social and professional settings.</p>
+            </div>
+            <div class="reveal-right">
+                <img src="./images/general/orthodontic-hero.webp" alt="Happy Patient with Clear Ceramic Braces" class="content-img" />
+                <p style="text-align: center; margin-top: 1rem; font-style: italic;">A smile that lasts a lifetime: Investing in braces is investing in your future health.</p>
+            </div>
         </div>
 
-        <div class="journey-step reveal-up">
-          <div class="step-num">3</div>
-          <div>
-            <h3>Periodic Adjustments</h3>
-            <p>Every 4–6 weeks, you'll visit us for adjustments. We may change your wires, add elastic bands, or reposition brackets. These sessions are crucial as they keep the teeth moving according to the plan.</p>
-          </div>
+        <h3>Types of Teeth Braces at Vijaya Dental</h3>
+        <p>Modern orthodontics has evolved significantly. We offer a range of options to suit your lifestyle, budget, and clinical needs.</p>
+
+        <h4>1. Traditional Metal Braces</h4>
+        <p>These are the most common type of braces and are more comfortable today than ever before. Made of high-grade stainless steel, metal braces straighten your teeth using metal brackets and archwires. At Vijaya Dental, we use low-profile brackets that are smaller and less irritating to the gums.</p>
+
+        <h4>2. Ceramic (Clear) Braces</h4>
+        <p>Ceramic braces are made of clear, translucent material. They are popular among older teenagers and adults who want the effectiveness of traditional braces but with a more subtle appearance. They are virtually invisible from a distance.</p>
+
+        <div class="content-grid" style="margin: 4rem 0;">
+            <div class="reveal-left">
+                <img src="./images/general/metal-braces-option.webp" alt="Traditional Metal Braces Illustration" class="content-img" />
+            </div>
+            <div class="reveal-right">
+                <h4>3. Self-Ligating Braces (Damon System)</h4>
+                <p>Self-ligating braces use a specialized clip instead of elastic bands to hold the archwire in place. This reduces friction and allows for faster tooth movement with fewer adjustments. They are often easier to clean as they don't have the "O-rings" where food can get trapped.</p>
+                <h4>4. Lingual Braces</h4>
+                <p>For those who want total invisibility, lingual braces are placed on the *back* side of the teeth. This is a highly specialized treatment that requires expert handling, which we provide at our Hyderabad clinic.</p>
+            </div>
         </div>
 
-        <div class="journey-step reveal-up">
-          <div class="step-num">4</div>
-          <div>
-            <h3>Debonding & Reveal</h3>
-            <p>Once the desired alignment is reached, we remove the braces. Seeing your new smile for the first time is a life-changing moment! We then polish your teeth to remove any remaining adhesive.</p>
-          </div>
+        <h3>How Teeth Braces Work: The Science of Movement</h3>
+        <p>Braces work by applying continuous, gentle pressure over a period of time to slowly move teeth in a specific direction. As the teeth move, the bone changes shape as pressure is applied.</p>
+        <p>This biological process is called <strong>remodeling</strong>. When the braces apply pressure, the bone in front of the tooth root breaks down (resorption), while new bone is built behind the root (deposition). This careful balance is what allows your orthodontist to guide your teeth into their ideal positions without damaging the roots or the jawbone.</p>
+
+        <div class="content-grid" style="margin: 4rem 0;">
+            <div class="reveal-left">
+                <h3>The Braces Journey: What to Expect</h3>
+                <p>Starting orthodontic treatment is a significant commitment. At Vijaya Dental, we make the process transparent and comfortable.</p>
+                <ul style="display: grid; gap: 1rem; margin-top: 2rem;">
+                    <li><strong>1. Initial Consultation:</strong> We perform a clinical exam and take digital X-rays (OPG/Ceph) to map your jaw structure.</li>
+                    <li><strong>2. Customized Planning:</strong> We use 3D simulation to show you how your teeth will move and estimate the treatment time.</li>
+                    <li><strong>3. Bonding Day:</strong> We carefully bond the brackets to your teeth and place the initial archwire.</li>
+                    <li><strong>4. Periodic Adjustments:</strong> Every 4-6 weeks, you'll visit us to have your wires adjusted or changed.</li>
+                    <li><strong>5. Retention:</strong> Once the braces are removed, we provide retainers to ensure your teeth stay in their new positions.</li>
+                </ul>
+            </div>
+            <div class="reveal-right">
+                <img src="./images/general/braces-adjustment-process.webp" alt="Orthodontist adjusting dental braces" class="content-img" />
+                <p style="text-align: center; margin-top: 1rem; font-style: italic;">Precision and care: Regular adjustments are key to a successful transformation.</p>
+            </div>
         </div>
 
-        <div class="journey-step reveal-up">
-          <div class="step-num">5</div>
-          <div>
-            <h3>Retention Phase</h3>
-            <p>Teeth have a "memory" and want to shift back. We provide custom retainers that you'll wear at night to keep your smile perfectly straight for a lifetime.</p>
-          </div>
+        <h3>Orthodontics for All Ages: Kids, Teens, and Adults</h3>
+        <p>There is no "perfect age" to start braces, but the American Association of Orthodontists recommends that children have their first evaluation by age 7. At this age, we can detect potential problems with jaw growth and emerging teeth.</p>
+        <p>However, adult orthodontics is booming! About 25% of our orthodontic patients are adults. With modern ceramic and lingual options, you are never too old to achieve the smile you've always wanted.</p>
+
+        <h3>Life with Braces: Maintenance and Care</h3>
+        <p>Caring for your braces is essential for a fast and healthy result. Brackets and wires create "traps" for food and plaque, so diligent hygiene is required.</p>
+        <p>We recommend using interproximal brushes and water flossers to clean hard-to-reach areas. Avoiding sticky, hard, or overly sugary foods is also vital to prevent bracket breakage and tooth decay during treatment.</p>
+
+        <div class="content-grid" style="margin: 4rem 0;">
+            <div class="reveal-left">
+                <img src="./images/general/ceramic-braces-option.webp" alt="Close up of Ceramic Braces" class="content-img" />
+            </div>
+            <div class="reveal-right">
+                <h3>The Cost of Braces in Hyderabad</h3>
+                <p>The cost of orthodontic treatment varies based on the complexity of the case and the type of braces chosen. Metal braces are typically the most affordable, while ceramic and lingual options are higher in price due to the materials and specialization involved. At Vijaya Dental, we offer monthly EMI plans to make your dream smile accessible and affordable.</p>
+                <p>In Dammaiguda, we are known for providing premium orthodontic care with flexible payment options, ensuring quality treatment for every family.</p>
+            </div>
+        </div>
+
+        <h3>Why Choose Vijaya Dental for Braces?</h3>
+        <p>Our orthodontic department is led by experienced specialists who have transformed thousands of smiles. We use only the highest quality materials and the latest digital diagnostic tools. Our focus is not just on straight teeth, but on creating a harmonious facial profile and a healthy, functional bite.</p>
+
+        <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions (FAQ)</span></h2>
+        <div style="margin-top: 3rem;">
+            <div class="faq-card">
+                <h3>Does it hurt to get braces?</h3>
+                <p>The application of braces doesn't hurt. However, your teeth may feel sore or tender for a few days after the initial placement and after adjustments. This is easily managed with mild pain relief and soft foods.</p>
+            </div>
+            <div class="faq-card">
+                <h3>How long will I have to wear braces?</h3>
+                <p>Treatment time varies depending on the severity of the case. On average, most patients wear braces for 12 to 24 months. We can give you a more accurate estimate after your initial scan.</p>
+            </div>
+            <div class="faq-card">
+                <h3>Can I still play sports or musical instruments?</h3>
+                <p>Yes! We recommend wearing a mouthguard for contact sports. For wind instruments, there may be a short adjustment period, but you'll be back to playing normally in no time.</p>
+            </div>
+            <div class="faq-card">
+                <h3>Will I need to have teeth extracted?</h3>
+                <p>Not always. We try to avoid extractions whenever possible. However, in cases of severe crowding or jaw misalignment, removing 1-2 teeth may be necessary to achieve the best result.</p>
+            </div>
+            <div class="faq-card">
+                <h3>Do I need to see my regular dentist during treatment?</h3>
+                <p>Yes! It is more important than ever to have regular cleanings and checkups with your general dentist to ensure your teeth stay healthy under the braces.</p>
+            </div>
+            <div class="faq-card">
+                <h3>What happens if a bracket breaks?</h3>
+                <p>Don't panic! It's not an emergency. Just call our clinic and we'll schedule a time to re-bond the bracket. In the meantime, you can use orthodontic wax to cover any sharp spots.</p>
+            </div>
+        </div>
+
+        <div class="treatments-cta reveal-up" style="margin-top: 5rem; text-align: center;">
+          <h2 style="margin-bottom: 1.5rem;">Start Your Smile Transformation</h2>
+          <p style="margin-bottom: 2.5rem; max-width: 700px; margin-left: auto; margin-right: auto;">Don't wait to get the smile you deserve. Schedule your orthodontic evaluation at Vijaya Dental today.</p>
+          <a href="appointment.html" class="btn-primary">📅 Book Your Appointment</a>
+          <a href="tel:9177617437" class="btn-outline-blue">📞 Call 91776 17437</a>
         </div>
       </div>
     </div>
   </section>
 
+  
   <!-- ==============================
-       CHAPTER 4: LIFESTYLE & CARE
+       REVIEWS / TESTIMONIALS
   ============================== -->
-  <section class="content-section" style="background: var(--bg-section);">
-    <div class="section-container">
-      <div class="content-grid">
-        <div class="reveal-left">
-           <div class="diet-box">
-             <h2 style="margin-bottom: 1rem;">The Braces-Friendly <span class="text-gradient">Kitchen</span></h2>
-             <p>Eating with braces requires a few adjustments, but you certainly won't go hungry! Here is our expert guide to maintaining your hardware while enjoying your meals.</p>
-             
-             <div class="diet-list">
-               <div>
-                 <h4><i data-lucide="check-circle" style="color:var(--accent-green)"></i> Safe to Enjoy</h4>
-                 <ul>
-                   <li>✓ Mashed potatoes & Pasta</li>
-                   <li>✓ Soft fruits like Bananas</li>
-                   <li>✓ Steamed vegetables</li>
-                   <li>✓ Soft cheeses & Yogurt</li>
-                   <li>✓ Scrambled eggs</li>
-                 </ul>
-               </div>
-               <div>
-                 <h4><i data-lucide="x-circle" style="color:var(--accent-red)"></i> Foods to Avoid</h4>
-                 <ul>
-                   <li>✗ Hard candy & Nuts</li>
-                   <li>✗ Popcorn (the hulls!)</li>
-                   <li>✗ Sticky caramel & Gum</li>
-                   <li>✗ Corn on the cob</li>
-                   <li>✗ Crusty bread & Pizza crust</li>
-                 </ul>
-               </div>
-             </div>
-           </div>
-        </div>
-        <div class="reveal-right detailed-text">
-          <h3>Pro Tips for Comfort</h3>
-          <p>The first few days after getting braces or having an adjustment can involve some soreness. This is completely normal and means your teeth are moving! Here's how to manage it:</p>
-          <ul style="display: grid; gap: 1rem; margin-top: 1rem;">
-             <li><strong>Saltwater Rinses:</strong> Mix a teaspoon of salt in warm water to soothe any mouth sores.</li>
-             <li><strong>Dental Wax:</strong> Use the wax we provide to cover any brackets that feel "pokey" to your cheeks.</li>
-             <li><strong>Over-the-Counter Relief:</strong> Mild pain relievers can help during the first 48 hours.</li>
-             <li><strong>Stay Hydrated:</strong> Drinking plenty of water keeps your mouth healthy.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==============================
-       CHAPTER 5: SCIENCE & HEALTH
-  ============================== -->
-  <section class="content-section">
+  <section class="reviews" id="reviews">
     <div class="section-container">
       <div class="section-header reveal-up">
-        <h2 class="section-title">The Science of <span class="text-gradient">Healthier Living</span></h2>
+        <div class="section-tag">Patient Stories</div>
+        <h2 class="section-title">What Our <span class="text-gradient">Patients Say</span></h2>
+        <div class="rating-display">
+          <div class="stars"><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i></div>
+          <strong>5.0 Rating</strong>
+          <span>·</span>
+        </div>
       </div>
-      <div class="detailed-text" style="max-width: 1000px; margin: 3rem auto; column-count: 2; column-gap: 4rem;">
-        <p>Many patients believe that braces are purely for vanity. However, the health benefits of properly aligned teeth are profound. When teeth are crowded or rotated, they create "traps" where plaque and tartar build up, even with diligent brushing. This significantly increases the risk of periodontal (gum) disease and tooth decay.</p>
-        <p>Furthermore, misaligned teeth often lead to an "unbalanced bite." This can cause uneven wear on the enamel, leading to tooth sensitivity and premature tooth loss. In many cases, chronic jaw pain, headaches, and TMJ disorders are directly linked to orthodontic issues. By correcting your alignment at Vijaya Dental, you are investing in the longevity of your natural teeth.</p>
-        <p>Psychologically, the impact is equally important. Studies have shown that individuals with a smile they are proud of are more likely to succeed in job interviews and social interactions. A confident smile changes how the world sees you and, more importantly, how you see yourself.</p>
-        <p>At our Dammaiguda clinic, we use the latest software to predict your results. We can show you a "before and after" projection before we even start, giving you a clear goal to look forward to during your treatment period.</p>
+
+      <div class="testimonials-wrapper">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <div class="testimonial-card">
+            <div class="tcard-header">
+              <div class="tcard-avatar" style="background: linear-gradient(135deg, #0c3a82, #1a6bcc)">D</div>
+              <div>
+                <strong>Dixit Reddy</strong>
+                <div class="tcard-stars"><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i></div>
+              </div>
+              <div class="google-badge">G</div>
+            </div>
+            <p>"I’m Dixit Reddy, and I recently visited Vijaya Dental & Implant Center with my mom for her Root Canal Treatment. Honestly, we had a really good experience. My mom was quite nervous, but the doctor explained everything clearly. The procedure was smooth and almost painless. Thank you, Dr. Praveen sir!"</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tcard-header">
+              <div class="tcard-avatar" style="background: var(--green-gradient)">M</div>
+              <div>
+                <strong>Manisha</strong>
+                <div class="tcard-stars"><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i></div>
+              </div>
+              <div class="google-badge">G</div>
+            </div>
+            <p>"Visited Vijaya Dental & Implant Center for teeth cleaning and consultation. The doctor is very knowledgeable and explains everything in detail. The clinic is well-maintained and uses modern technology. I felt very comfortable throughout the treatment. Highly recommend!"</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tcard-header">
+              <div class="tcard-avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c)">V</div>
+              <div>
+                <strong>Vanadana</strong>
+                <div class="tcard-stars"><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i></div>
+              </div>
+              <div class="google-badge">G</div>
+            </div>
+            <p>"I’m Vanadana, and I visited Vijaya Dental & Implant Center for braces to improve my smile. Dr. Praveen sir explained everything clearly and made me feel comfortable. The treatment process was smooth, the clinic is clean, and the staff are very friendly. Highly recommended 👍"</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tcard-header">
+              <div class="tcard-avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe)">S</div>
+              <div>
+                <strong>Sunny</strong>
+                <div class="tcard-stars"><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i></div>
+              </div>
+              <div class="google-badge">G</div>
+            </div>
+            <p>"Excellent experience at Vijaya Dental! I went for a wisdom tooth consultation and the doctor was very patient in explaining the process. The treatment was painless and the costs were very reasonable. Definitely the best dentist in Dammaiguda!"</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="reviews-cta reveal-up">
+        <a href="tel:9177617437" class="btn-primary">📞 Call & Book Now</a>
       </div>
     </div>
   </section>
 
-
-  <!-- ==============================
-       FAQs (EXPANDED)
+<!-- ==============================
+       LOCATION Integration
   ============================== -->
-  <section class="content-section">
+  <section class="location" id="location">
     <div class="section-container">
       <div class="section-header reveal-up">
-        <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+        <div class="section-tag">Find Us</div>
+        <h2 class="section-title">Our <span class="text-gradient">Location</span></h2>
       </div>
-      
-      <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin: 3rem auto 0; max-width: 900px;" class="reveal-up">
-        <div class="faq-card">
-          <h3>Am I too old for braces?</h3>
-          <p>Never! About 25% of our orthodontic patients are adults. As long as your gums and bone structure are healthy, you can straighten your teeth at any age.</p>
+
+      <div class="location-grid">
+        <div class="location-info reveal-left">
+          <div class="loc-card" id="loc-address">
+            <div class="loc-icon">📍</div>
+            <div>
+              <strong>Address</strong>
+              <p>Beside RR hospital,<br />P S Rao Nagar, Dammaiguda,<br />Hyderabad, Telangana 500083</p>
+              <p style="font-size: 0.8rem; margin-top: 0.4rem; color: var(--primary); font-weight: 600;">Plus Code: GH2R+3V Secunderabad</p>
+            </div>
+          </div>
+          <div class="loc-card" id="loc-phone">
+            <div class="loc-icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:9177617437">91776 17437</a></p>
+            </div>
+          </div>
+          <div class="loc-card" id="loc-hours">
+            <div class="loc-icon">🕙</div>
+            <div>
+              <strong>Center Hours</strong>
+              <p>Monday – Sunday<br />10:00 AM – 10:00 PM</p>
+            </div>
+          </div>
+          <div class="loc-card" id="loc-lang">
+            <div class="loc-icon">🌐</div>
+            <div>
+              <strong>Languages Spoken</strong>
+              <p>Telugu · Hindi · English</p>
+            </div>
+          </div>
+          <a href="https://maps.app.goo.gl/1b5e2b1ecf9f6752" target="_blank" rel="noopener" class="btn-primary" id="get-directions-btn" style="margin-top:1rem">
+            📍 Get Directions on Google Maps
+          </a>
         </div>
-        <div class="faq-card">
-          <h3>How do I clean my teeth with braces?</h3>
-          <p>We recommend using an interproximal brush or a water flosser to get behind the wires. Brushing after every meal is highly recommended.</p>
-        </div>
-        <div class="faq-card">
-          <h3>What if a wire breaks?</h3>
-          <p>If a wire is poking you, try to gently push it back with a cotton swab or cover it with wax. Call us immediately for a repair appointment.</p>
-        </div>
-        <div class="faq-card">
-          <h3>Can I play sports with braces?</h3>
-          <p>Yes! We highly recommend wearing an orthodontic mouthguard during contact sports to protect your lips, cheeks, and the braces themselves.</p>
-        </div>
-        <div class="faq-card">
-          <h3>How often are adjustments?</h3>
-          <p>Usually once every 4 to 6 weeks. These visits are quick but vital to keep your treatment on track.</p>
-        </div>
-        <div class="faq-card">
-          <h3>Do I really need retainers?</h3>
-          <p>Yes. Without retainers, your teeth will slowly drift back toward their original positions, undoing all your hard work.</p>
+
+        <div class="location-map reveal-right">
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.105!2d78.5921875!3d17.5001875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9dc8f6ee3303%3A0x1b5e2b1ecf9f6752!2sVijaya%20Dental%20%26%20Implant Center%2C%20Dammaiguda!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Vijaya Dental & Implant Center Location"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==============================
-       CONCLUSION CTA
-  ============================== -->
-  <section class="content-section" style="background: var(--blue-gradient); color: white; text-align: center;">
-    <div class="section-container">
-       <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1.5rem;">Ready for Your Smile Transformation?</h2>
-       <p style="font-size: 1.2rem; opacity: 0.9; max-width: 700px; margin: 0 auto 2.5rem;">Join the hundreds of happy patients who have achieved their dream smile at Vijaya Dental & Implant Center, Dammaiguda.</p>
-       <a href="appointment.html" class="btn-primary" style="background: white; color: var(--primary); font-size: 1.1rem; padding: 1rem 2.5rem;">Book Your Free Consultation Now</a>
-    </div>
-  </section>
 
-  <!-- ==============================
-       FOOTER
-  ============================== -->
-  <footer class="footer">
+<!-- FOOTER -->
+    <footer class="footer">
     <div class="footer-container">
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="nav-logo">
-            <img src="vijayalogog (1).jpg" alt="Vijaya Dental & Implant Center Logo" class="logo-img" /><div class="logo-text"><span class="logo-main">Vijaya Dental</span><span class="logo-sub">& Implant Center</span></div>
+            <img src="images/general/vijaya-dental-logo-v2.webp" alt="Vijaya Dental & Implant Center Logo" class="logo-img" /><div class="logo-text"><span class="logo-main">Vijaya Dental</span><span class="logo-sub">& Implant Center</span></div>
           </a>
           <p>Delivering painless, affordable, and world-class dental care in Hyderabad since day one.</p>
-          <div class="footer-rating">⭐⭐⭐⭐⭐ <strong>5.0</strong> · 130+ Reviews</div>
+          <div class="footer-rating"><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i> <strong>5.0</strong></div>
         </div>
 
         <div class="footer-col">
@@ -407,8 +422,8 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="treatments.html">Treatments</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="appointment.html">Book Appointment</a></li>
           </ul>
         </div>
@@ -426,27 +441,51 @@
             <li><a href="teeth-whitening.html">Teeth Whitening</a></li>
             <li><a href="impacted-teeth.html">Impacted Teeth</a></li>
             <li><a href="full-mouth-rehabilitation.html">Full Mouth Rehabilitation</a></li>
+            <li><a href="facial-fracture.html">Facial Fracture Treatment</a></li>
           </ul>
         </div>
 
-        <div class="footer-col">
+                <div class="footer-col">
           <h4>Contact Us</h4>
           <div class="footer-contact">
             <p>📍 Beside RR hospital, P S Rao Nagar, Dammaiguda, Hyderabad</p>
             <p><a href="tel:9177617437">📞 91776 17437</a></p>
-            <p>🕙 Opens 10:00 AM Daily</p>
+            <p>🕙 10:00 AM – 10:00 PM</p>
           </div>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>© 2025 Vijaya Dental & Implant Center. All rights reserved.</p>
+        <div class="footer-bottom-flex">
+          <p>© 2026 Vijaya Dental & Implant Center. All rights reserved.</p>
+          <div class="designer-credit">
+            <a href="https://www.instagram.com/deekshit.ai/?hl=en" target="_blank" rel="noopener">
+              Designed & Developed by Deekshit Freelancer <i data-lucide="instagram"></i>
+            </a>
+          </div>
+        </div>
+        <p class="footer-seo">Best Dental Center in Dammaiguda | Painless Root Canal Hyderabad | Affordable Dentist Near Me</p>
       </div>
     </div>
   </footer>
 
   <script type="module" src="src/main.js"></script>
-  <script>
-    lucide.createIcons();
-  </script>
+  <script>lucide.createIcons();</script>
+
+  <!-- Floating Buttons -->
+  <a href="tel:9177617437" class="fab-call" id="fab-call" aria-label="Call Now">
+    <span>📞</span>
+    <span class="fab-label">Call Now</span>
+  </a>
+
+  <a href="https://wa.me/919177617437?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Vijaya%20Dental%20Center" target="_blank" rel="noopener" class="fab-whatsapp" id="fab-whatsapp" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="fab-label">WhatsApp</span>
+  </a>
+
 </body>
 </html>
+
+

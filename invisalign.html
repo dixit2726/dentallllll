@@ -40,7 +40,7 @@
     .invis-hero {
       position: relative;
       padding: 160px 0 100px;
-      background: linear-gradient(135deg, #0c3a82 0%, #1a6bcc 100%);
+      background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
       color: white;
       text-align: center;
       overflow: hidden;
@@ -48,9 +48,9 @@
     .invis-hero-bg {
       position: absolute;
       inset: 0;
-      background: url('./invisalign-hero.png') center/cover no-repeat;
-      opacity: 0.35;
-      mix-blend-mode: overlay;
+      background: url('./images/general/invisalign-hero.webp') center/cover no-repeat;
+      opacity: 0.6;
+      mix-blend-mode: multiply;
     }
     .invis-hero .section-container { position: relative; z-index: 2; }
     
@@ -163,15 +163,14 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
-        <img src="vijayalogog (1).jpg" alt="Vijaya Dental & Implant Center Logo" class="logo-img" /><div class="logo-text"><span class="logo-main">Vijaya Dental</span><span class="logo-sub">& Implant Center</span></div>
+        <img src="images/general/vijaya-dental-logo-v2.webp" alt="Vijaya Dental & Implant Center Logo" class="logo-img" /><div class="logo-text"><span class="logo-main">Vijaya Dental</span><span class="logo-sub">& Implant Center</span></div>
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
         <li><a href="treatments.html" class="nav-link">Treatments</a></li>
-        <li><a href="reviews.html" class="nav-link">Reviews</a></li>
         <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-        <li><a href="location.html" class="nav-link">Location</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
         <li><a href="appointment.html" class="nav-link nav-cta">Book Now</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -188,7 +187,7 @@
     <div class="section-container">
       <div class="section-tag" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); color:white;">Clear Aligners</div>
       <h1 class="section-title" style="color: white;">What is <span style="color:var(--accent-teal)">Invisalign?</span></h1>
-      <p style="max-width: 700px; margin: 0 auto 2rem; opacity: 0.9; font-size: 1.2rem;">Modern, advanced, and nearly invisible solution for teeth alignment in Dammaiguda, Hyderabad.</p>
+      <p style="max-width: 700px; margin: 0 auto 2rem; opacity: 0.6; font-size: 1.2rem;">Modern, advanced, and nearly invisible solution for teeth alignment in Dammaiguda, Hyderabad.</p>
       <a href="#appointment" class="btn-primary">Book Free Consultation</a>
     </div>
   </section>
@@ -206,7 +205,7 @@
           <p style="margin-top: 1rem;">This is where <strong>Invisalign</strong> comes in — a modern, advanced, and nearly invisible solution for teeth alignment. If you are searching for the best dental clinic in Dammaiguda, Hyderabad, Telangana, Invisalign treatment at Vijaya Dental & Implant Center offers a premium, comfortable, and effective solution.</p>
         </div>
         <div class="reveal-right">
-          <img src="./invisalign-detail.png" alt="Invisalign Clear Aligners" class="content-img" />
+          <img src="./images/general/invisalign-aligners.webp" alt="Invisalign Clear Aligners" class="content-img" />
         </div>
       </div>
     </div>
@@ -245,6 +244,18 @@
           <p>Wear your aligners for 20–22 hours daily, switching to a new set every 1-2 weeks as your teeth gradually move.</p>
         </div>
       </div>
+
+      <div class="content-grid" style="margin-top: 5rem;">
+        <div class="reveal-left">
+          <img src="./images/general/invisalign-scan.webp" alt="3D Intraoral Scanning for Invisalign" class="content-img" />
+          <p style="text-align: center; margin-top: 1rem; font-style: italic;">Advanced 3D scanning ensures a perfect, custom fit for your aligners.</p>
+        </div>
+        <div class="reveal-right">
+          <h2 class="section-title">Digital <span class="text-gradient">Precision</span></h2>
+          <p>We use the latest iTero Element scanning technology to take thousands of pictures of your teeth per second. This creates a high-resolution 3D map that is used to custom-engineer your series of Invisalign aligners with microscopic accuracy.</p>
+          <p style="margin-top: 1rem;">This digital approach is not only more accurate than traditional molds but also much more comfortable for the patient—no gagging or messy putty involved.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -255,7 +266,7 @@
     <div class="section-container">
       <div class="content-grid">
         <div class="reveal-left">
-          <img src="./invisalign-scan.png" alt="Digital Dental Scan" class="content-img" />
+          <img src="images/general/clear-aligners-detail.webp" alt="Digital Dental Scan" class="content-img" />
         </div>
         <div class="reveal-right">
           <div class="section-tag">Why Choose Invisalign?</div>
@@ -391,17 +402,80 @@
   </section>
 
   <!-- ==============================
-       FOOTER
+       LOCATION Integration
   ============================== -->
-  <footer class="footer">
+  <section class="location" id="location">
+    <div class="section-container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Find Us</div>
+        <h2 class="section-title">Our <span class="text-gradient">Location</span></h2>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-info reveal-left">
+          <div class="loc-card" id="loc-address">
+            <div class="loc-icon">📍</div>
+            <div>
+              <strong>Address</strong>
+              <p>Beside RR hospital,<br />P S Rao Nagar, Dammaiguda,<br />Hyderabad, Telangana 500083</p>
+              <p style="font-size: 0.8rem; margin-top: 0.4rem; color: var(--primary); font-weight: 600;">Plus Code: GH2R+3V Secunderabad</p>
+            </div>
+          </div>
+          <div class="loc-card" id="loc-phone">
+            <div class="loc-icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:9177617437">91776 17437</a></p>
+            </div>
+          </div>
+          <div class="loc-card" id="loc-hours">
+            <div class="loc-icon">🕙</div>
+            <div>
+              <strong>Center Hours</strong>
+              <p>Monday – Sunday<br />10:00 AM – 10:00 PM</p>
+            </div>
+          </div>
+          <div class="loc-card" id="loc-lang">
+            <div class="loc-icon">🌐</div>
+            <div>
+              <strong>Languages Spoken</strong>
+              <p>Telugu · Hindi · English</p>
+            </div>
+          </div>
+          <a href="https://maps.app.goo.gl/1b5e2b1ecf9f6752" target="_blank" rel="noopener" class="btn-primary" id="get-directions-btn" style="margin-top:1rem">
+            📍 Get Directions on Google Maps
+          </a>
+        </div>
+
+        <div class="location-map reveal-right">
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.105!2d78.5921875!3d17.5001875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9dc8f6ee3303%3A0x1b5e2b1ecf9f6752!2sVijaya%20Dental%20%26%20Implant Center%2C%20Dammaiguda!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Vijaya Dental & Implant Center Location"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- FOOTER -->
+    <footer class="footer">
     <div class="footer-container">
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="nav-logo">
-            <img src="vijayalogog (1).jpg" alt="Vijaya Dental & Implant Center Logo" class="logo-img" /><div class="logo-text"><span class="logo-main">Vijaya Dental</span><span class="logo-sub">& Implant Center</span></div>
+            <img src="images/general/vijaya-dental-logo-v2.webp" alt="Vijaya Dental & Implant Center Logo" class="logo-img" /><div class="logo-text"><span class="logo-main">Vijaya Dental</span><span class="logo-sub">& Implant Center</span></div>
           </a>
           <p>Delivering painless, affordable, and world-class dental care in Hyderabad since day one.</p>
-          <div class="footer-rating">⭐⭐⭐⭐⭐ <strong>5.0</strong> · 130+ Reviews</div>
+          <div class="footer-rating"><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i><i data-lucide="star" style="width:16px; height:16px; fill:#ffc107; color:#ffc107; vertical-align:middle;"></i> <strong>5.0</strong></div>
         </div>
 
         <div class="footer-col">
@@ -410,8 +484,8 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="treatments.html">Treatments</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="appointment.html">Book Appointment</a></li>
           </ul>
         </div>
@@ -429,27 +503,48 @@
             <li><a href="teeth-whitening.html">Teeth Whitening</a></li>
             <li><a href="impacted-teeth.html">Impacted Teeth</a></li>
             <li><a href="full-mouth-rehabilitation.html">Full Mouth Rehabilitation</a></li>
+            <li><a href="facial-fracture.html">Facial Fracture Treatment</a></li>
           </ul>
         </div>
 
-        <div class="footer-col">
+                <div class="footer-col">
           <h4>Contact Us</h4>
           <div class="footer-contact">
             <p>📍 Beside RR hospital, P S Rao Nagar, Dammaiguda, Hyderabad</p>
             <p><a href="tel:9177617437">📞 91776 17437</a></p>
-            <p>🕙 Opens 10:00 AM Daily</p>
+            <p>🕙 10:00 AM – 10:00 PM</p>
           </div>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>© 2025 Vijaya Dental & Implant Center. All rights reserved.</p>
+        <div class="footer-bottom-flex">
+          <p>© 2026 Vijaya Dental & Implant Center. All rights reserved.</p>
+          <div class="designer-credit">
+            <a href="https://www.instagram.com/deekshit.ai/?hl=en" target="_blank" rel="noopener">
+              Designed & Developed by Deekshit Freelancer <i data-lucide="instagram"></i>
+            </a>
+          </div>
+        </div>
+        <p class="footer-seo">Best Dental Center in Dammaiguda | Painless Root Canal Hyderabad | Affordable Dentist Near Me</p>
       </div>
     </div>
   </footer>
 
   <script type="module" src="src/main.js"></script>
-  <script>
-    lucide.createIcons();
-  </script>
+  <script>lucide.createIcons();</script>
+
+  <!-- Floating Buttons -->
+  <a href="tel:9177617437" class="fab-call" id="fab-call" aria-label="Call Now">
+    <span>📞</span>
+    <span class="fab-label">Call Now</span>
+  </a>
+
+  <a href="https://wa.me/919177617437?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Vijaya%20Dental%20Center" target="_blank" rel="noopener" class="fab-whatsapp" id="fab-whatsapp" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="fab-label">WhatsApp</span>
+  </a>
 </body>
 </html>

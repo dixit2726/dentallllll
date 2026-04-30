@@ -23,8 +23,8 @@ const setBg = (el, img) => {
   el.style.backgroundImage = `url('${path}')`;
 };
 
-setBg(bg1, 'dental111.jpg');
-setBg(bg2, 'dentallllsmile.jpg');
+setBg(bg1, 'images/general/dental-treatment-hero.webp');
+setBg(bg2, 'images/smile-design/smile-design-treatment.webp');
 
 /* ============================================================
    VIJAYA DENTAL – MAIN JS
@@ -141,6 +141,22 @@ if (revealElements.length > 0) {
   revealElements.forEach(el => revealObserver.observe(el));
 }
 
+// ── Video Autoplay Observer ──────────────────────────────────
+const galleryVideos = document.querySelectorAll('.gallery-item video');
+if (galleryVideos.length > 0) {
+  const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.play().catch(() => {}); // Catch block for browsers that block autoplay
+      } else {
+        entry.target.pause();
+      }
+    });
+  }, { threshold: 0.2 });
+
+  galleryVideos.forEach(vid => videoObserver.observe(vid));
+}
+
 // ── Testimonials infinite scroll clone ────────────────────────
 const track = document.getElementById('testimonialsTrack');
 if (track) {
@@ -155,6 +171,7 @@ if (track) {
 const galleryItems  = document.querySelectorAll('.gallery-item');
 const lightbox      = document.getElementById('lightbox');
 const lightboxImg   = document.getElementById('lightboxImg');
+const lightboxVid   = document.getElementById('lightboxVid');
 const lightboxClose = document.getElementById('lightboxClose');
 const lightboxPrev  = document.getElementById('lightboxPrev');
 const lightboxNext  = document.getElementById('lightboxNext');
@@ -165,8 +182,29 @@ if (galleryItems.length > 0 && lightbox && lightboxImg) {
 
   const openLightbox = (index) => {
     currentGallery = index;
-    lightboxImg.src = gallerySrcs[currentGallery];
-    lightboxImg.alt = galleryItems[currentGallery].querySelector('img').alt;
+    const src = gallerySrcs[currentGallery];
+    const itemElement = galleryItems[currentGallery];
+    
+    let altText = 'Gallery Media';
+    const imgEl = itemElement.querySelector('img');
+    if (imgEl) altText = imgEl.alt;
+
+    if (src.endsWith('.mp4') || src.endsWith('.webm')) {
+      lightboxImg.style.display = 'none';
+      if (lightboxVid) {
+        lightboxVid.style.display = 'block';
+        lightboxVid.src = src;
+        lightboxVid.play();
+      }
+    } else {
+      if (lightboxVid) {
+        lightboxVid.style.display = 'none';
+        lightboxVid.pause();
+      }
+      lightboxImg.style.display = 'block';
+      lightboxImg.src = src;
+      lightboxImg.alt = altText;
+    }
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
   };
@@ -174,6 +212,7 @@ if (galleryItems.length > 0 && lightbox && lightboxImg) {
   const closeLightbox = () => {
     lightbox.classList.remove('open');
     document.body.style.overflow = '';
+    if (lightboxVid) lightboxVid.pause();
   };
 
   galleryItems.forEach((item, i) => {
@@ -185,15 +224,13 @@ if (galleryItems.length > 0 && lightbox && lightboxImg) {
 
   if (lightboxPrev) {
     lightboxPrev.addEventListener('click', () => {
-      currentGallery = (currentGallery - 1 + gallerySrcs.length) % gallerySrcs.length;
-      lightboxImg.src = gallerySrcs[currentGallery];
+      openLightbox((currentGallery - 1 + gallerySrcs.length) % gallerySrcs.length);
     });
   }
 
   if (lightboxNext) {
     lightboxNext.addEventListener('click', () => {
-      currentGallery = (currentGallery + 1) % gallerySrcs.length;
-      lightboxImg.src = gallerySrcs[currentGallery];
+      openLightbox((currentGallery + 1) % gallerySrcs.length);
     });
   }
 
@@ -297,9 +334,12 @@ function animateTrustCounter(el) {
     const progress = Math.min(elapsed / duration, 1);
     const eased    = 1 - Math.pow(1 - progress, 3);
     const value    = eased * target;
-    el.textContent = value.toFixed(decimals) + suffix;
+    el.innerHTML = value.toFixed(decimals) + suffix;
     if (progress < 1) requestAnimationFrame(tick);
-    else el.textContent = target.toFixed(decimals) + suffix;
+    else {
+      el.innerHTML = target.toFixed(decimals) + suffix;
+      if (window.lucide) window.lucide.createIcons();
+    }
   }
 
   requestAnimationFrame(tick);
@@ -321,9 +361,8 @@ if (trustSection) trustObserver.observe(trustSection);
 
 // ── Page load animation ────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-  document.body.style.opacity = '0';
-  requestAnimationFrame(() => {
-    document.body.style.transition = 'opacity 0.5s ease';
+  setTimeout(() => {
+    document.body.style.transition = 'opacity 0.6s ease';
     document.body.style.opacity = '1';
-  });
+  }, 50); // Small delay to ensure styles are ready
 });
